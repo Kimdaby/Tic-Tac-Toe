@@ -4,6 +4,15 @@
     align-items: center;
     background-color: #1e2020;
     height: 500px;
+    width: 500px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
 }
 
 .item {
@@ -19,6 +28,7 @@
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 1px;
     grid-row-gap: 1px;
+    align-items: center;
 }
 
 .item-1 { grid-area: 1 / 1 / 2 / 2; }
@@ -40,26 +50,15 @@
     color:#1e2020;
 }
 
-h1 {
+h1, h3 {
     justify-content: center;
     display: flex;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bolder;
-}
-
-h3 {
-    justify-content: center;
-    display: flex;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight:bolder;
 }
 
 button {
     justify-content: center;
     display: flex;
     align-items: center;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bolder;
     padding: 5px 20px;
     width: 150px;
     border-radius: 10ch;

@@ -54,6 +54,10 @@
         isGameOver = true;
       }
     }
+    if (currentBoard.every((item) => item !== "")) {
+      playerTurn.textContent = "Game ended up as a draw";
+      isGameOver = true;
+    }
   }
 
   function handleClick(event, index) {
